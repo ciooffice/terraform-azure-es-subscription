@@ -68,7 +68,7 @@ data "azurerm_management_group" "main" {
 
 resource "azurerm_management_group_subscription_association" "main" {
   management_group_id = data.azurerm_management_group.main.id
-  subscription_id     = azurerm_subscription.main.id
+  subscription_id     = azurerm_subscription.main.subscription_id
 }
 
 # Assign Lighthouse management
