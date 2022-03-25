@@ -63,7 +63,7 @@ resource "azurerm_role_assignment" "owner" {
 }
 
 data "azurerm_management_group" "main" {
-  name = "${var.root_id}-${var.landing_zone_key}"
+  name = var.mgmt_group_name
 }
 
 resource "azurerm_management_group_subscription_association" "main" {

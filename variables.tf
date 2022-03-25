@@ -21,18 +21,13 @@ variable "billing_scope_id" {
   default      = null
 }
 
-variable "root_mgmt_group_id" {
-  description  = "Root management group ID"
-  type         = string
-}
-
 variable "subscription_tags" {
   description  = "Subscription tags"
   type         = map(string)
 }
 
-variable "landing_zone_key" {
-  description  = "Landing zone key"
+variable "mgmt_group_name" {
+  description  = "Management Group Name"
   type         = string
   default      = null
 }
