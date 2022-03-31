@@ -19,12 +19,6 @@ resource "azurerm_subscription" "main" {
   billing_scope_id  = var.billing_scope_id
 
   tags              = var.subscription_tags
-
-  # lifecycle {
-  #   ignore_changes = [
-  #     tags,
-  #   ]
-  # }
 }
 
 # Register resource providers
