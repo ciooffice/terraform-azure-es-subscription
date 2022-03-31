@@ -59,7 +59,3 @@ variable "resource_providers" {
     "Microsoft.Storage"
   ]
 }
-
-# variable "lighthouse_definition_id" {
-#   type = string
-# }
