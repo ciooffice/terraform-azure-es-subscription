@@ -71,11 +71,3 @@ resource "azurerm_management_group_subscription_association" "main" {
   subscription_id     = "/subscriptions/${azurerm_subscription.main.subscription_id}"
 }
 
-# Assign Lighthouse management
-# resource "azurerm_lighthouse_assignment" "main" {
-#   scope                    = "/subscriptions/${azurerm_subscription.main.subscription_id}"
-#   lighthouse_definition_id = var.lighthouse_definition_id
-#   depends_on               = [null_resource.azurerm_providers]
-# }
-
-
