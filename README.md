@@ -4,34 +4,34 @@
 ### location (optional)
 Location of the deployment.\
 Type: string\
-Default: westeurope\
+Default: westeurope
 
 ### subscription_name (mandatory)
 Name of the subscription.\
-Type: string\
+Type: string
 
 ### subscription_id (optional)
 Subscription Id. Only needed for importing existing subscription.\
 Type: string\
-Default: null\
+Default: null
 
 ### billing_scope_id (optional)
 Id of the billing scople. Only required for new subscriptions (without subscription_id parameter)\
 Type: string\
-Default: null\
+Default: null
 
 ### subscription_tags (mandatory)
 Tags to be assigned to the subscription.\
-Type: map(string)\
+Type: map(string)
 
 ### mgmt_group_name (mandatory)
 Name (id) of an existing management group. Subscription will be added to this managment group.\
-Type: string\
+Type: string
 
 ### owner_users (optional)
 UPNs (Azure AD email addresses) of users that should be assigned owner permissions to the subscription\
 Type: list(string)\
-Default: []\
+Default: []
 
 ### resource_providers (optional)
 List of resource providers to be registered.\
@@ -53,10 +53,9 @@ Default: [\
     "Microsoft.RecoveryServices",\
     "Microsoft.Security",\
     "Microsoft.Storage"\
-  ]\
-
+  ]
 
 ## Outputs
 ### subscription_id
 Subscription Id.\
-Type: string\
+Type: string
