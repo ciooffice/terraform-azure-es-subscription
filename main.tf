@@ -1,11 +1,11 @@
 # Configure the Azure provider
 terraform {
-  required_version = ">= 0.12.24"
+  required_version = ">= 1.0"
   required_providers {
-    azurerm = "~> 2"
+    azurerm = "~> 3"
     azuread = {
       source  = "hashicorp/azuread"
-      version = "=1.4.0"
+      version = "~>2.16"
     }
   }
 }
